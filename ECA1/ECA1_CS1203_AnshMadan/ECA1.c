@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-// Function to print the current permutation
 void printPermutation(int n, int permutation[]) {
     for (int i = 0; i < n; i++) {
-        printf("%d ", permutation[i]);
+        printf("%d", permutation[i]);
+        if (i < n - 1) {
+            printf(","); // Add a comma without space if it's not the last number
+        }
     }
     printf("\n");
 }
@@ -21,7 +23,6 @@ int main() {
     int permutation[8];
     int factorial = 1;
 
-    // Initialize the permutation array and calculate n factorial
     for (int i = 1; i <= n; i++) {
         permutation[i - 1] = i;
         factorial *= i;
