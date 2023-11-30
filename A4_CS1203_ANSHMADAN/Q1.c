@@ -1,5 +1,5 @@
 //In the code we introduce a printPath function which prints the path from source to each vertex
-//We also alter the printSolution function to accomadate the printpath fnction inside it
+//We also alter the printSolution function to accomadate the printpath function inside it
 
 
 
